@@ -14,16 +14,15 @@ import org.apache.logging.log4j.Logger;
         modid = JapaneseEmojiCommands.MODID,
         version = JapaneseEmojiCommands.VERSION,
         updateJSON = JapaneseEmojiCommands.UPDATE_JSON,
-        certificateFingerprint = JapaneseEmojiCommands.FINGERPRINT,
+        certificateFingerprint = "@FINGERPRINT@",
         acceptedMinecraftVersions = JapaneseEmojiCommands.MC_VERSION,
         clientSideOnly = true)
 public class JapaneseEmojiCommands {
 
     public static final String NAME = "Japanese Emoji Commands";
     public static final String MODID = "japaneseemojicommands";
-    public static final String VERSION = "@version@";
+    public static final String VERSION = "1.2.0";
     public static final String UPDATE_JSON = "https://raw.githubusercontent.com/MinecraftModDevelopmentMods/Japanese-Emoji-Commands/master/update.json";
-    public static final String FINGERPRINT = "@fingerprint@";
     public static final String MC_VERSION = "[1.12, 1.12.2]";
     public static final Logger LOGGER = LogManager.getLogger(NAME);
 

@@ -1,10 +1,25 @@
 {
-  "homepage": "https://mcmoddev.com",
+  "homepage": "https://www.curseforge.com/minecraft/mc-mods/japanese-emoji-commands",
   "promos": {
-    "1.12.2-latest": "1.0.0",
-    "1.12.2-recommended": "1.0.0"
+    "1.12.2-latest": "1.2.0",
+    "1.12.2-recommended": "1.2.0",
+
+    "1.12.1-latest": "1.0.1",
+    "1.12.1-recommended": "1.0.1",
+
+    "1.11.2-latest": "1.2.0",
+    "1.11.2-recommended": "1.2.0"
   },
   "1.12.2": {
-    "1.0.0": "https://raw.githubusercontent.com/MinecraftModDevelopmentMods/Japanese-Emoji-Commands/master/changelog.txt"
+    "1.2.0": "https://raw.githubusercontent.com/MinecraftModDevelopmentMods/Japanese-Emoji-Commands/master/CHANGELOG.md",
+    "1.1.0": "https://raw.githubusercontent.com/MinecraftModDevelopmentMods/Japanese-Emoji-Commands/master/CHANGELOG.md"
+  },
+  "1.12.1": {
+    "1.0.1": "https://raw.githubusercontent.com/MinecraftModDevelopmentMods/Japanese-Emoji-Commands/master/CHANGELOG.md",
+    "1.0.0": "https://raw.githubusercontent.com/MinecraftModDevelopmentMods/Japanese-Emoji-Commands/master/CHANGELOG.md"
+  },
+  "1.11.2": {
+    "1.2.0": "https://raw.githubusercontent.com/MinecraftModDevelopmentMods/Japanese-Emoji-Commands/master/CHANGELOG.md",
+    "1.0.0": "https://raw.githubusercontent.com/MinecraftModDevelopmentMods/Japanese-Emoji-Commands/master/CHANGELOG.md"
   }
 }
