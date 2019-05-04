@@ -1,0 +1,86 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            name = "forge"
+            url = "http://files.minecraftforge.net/maven"
+        }
+    }
+    dependencies {
+        classpath "net.minecraftforge.gradle:ForgeGradle:${project.forge_gradle_version}"
+    }
+}
+
+plugins {
+    id "com.matthewprenger.cursegradle" version "1.0.10"
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+version = project.forge_minecraft_version + '-' + project.mod_version
+group = project.group
+archivesBaseName = project.mod_name
+
+minecraft {
+    version = project.forge_minecraft_version + '-' + project.forge_version
+    runDir = 'run'
+    mappings = project.mcp_mappings
+
+    replace '@version@', project.mod_version
+    replace '@fingerprint@', project.fingerprint
+
+    if (project.hasProperty('mc_username')) {
+        clientRunArgs += ['--username', project.mc_username]
+        if (project.hasProperty('mc_password')) {
+            clientRunArgs += ['--password', project.mc_password]
+        }
+    }
+
+    if (project.hasProperty('mc_uuid')) {
+        clientRunArgs += ['--uuid', project.mc_uuid]
+    }
+
+    serverRunArgs += 'nogui'
+    serverJvmArgs += '-Dfml.doNotBackup=true'
+    clientJvmArgs += '-Dfml.doNotBackup=true'
+    serverJvmArgs += '-Dfml.queryResult=confirm'
+    makeObfSourceJar = false
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.com'
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.com'
+    }
+}
+
+task signJar(type: SignJar, dependsOn: reobfJar) {
+    onlyIf {
+        project.hasProperty('keyStore')
+    }
+    keyStore = project.keyStore
+    alias = project.keyStoreAlias
+    storePass = project.keyStorePass
+    keyPass = project.keyStoreKeyPass
+    inputFile = jar.archivePath
+    outputFile = jar.archivePath
+}
+build.dependsOn signJar
+
+curseforge {
+    apiKey = project.curse_api_key
+    project {
+        id = project.project_id
+        releaseType = project.release_type.toLowerCase()
+        changelog = project.changelog
+        addGameVersion project.forge_minecraft_version
+    }
+}

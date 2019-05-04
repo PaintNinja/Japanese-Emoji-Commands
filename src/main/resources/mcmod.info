@@ -1,0 +1,16 @@
+[
+{
+  "modid": "japaneseemojicommands",
+  "name": "Japanese Emoji Commands",
+  "description": "A simple mod that let's you use Kaomoji (Japanese emoji) in Minecraft.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://mcmoddev.com",
+  "updateUrl": "https://www.curseforge.com/minecraft/mc-mods/japanese-emoji-commands",
+  "authorList": ["ProxyNeko"],
+  "credits": "ProxyNeko",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

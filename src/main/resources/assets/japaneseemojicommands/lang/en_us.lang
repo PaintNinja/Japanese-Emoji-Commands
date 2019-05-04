@@ -1,0 +1,83 @@
+# Emoticons.
+
+japaneseemojicommands.emoticon.happy=%s (* ^ ω ^)
+japaneseemojicommands.emoticon.love=%s (❤ω❤)
+japaneseemojicommands.emoticon.blush=%s (ง ื▿ ื)ว
+japaneseemojicommands.emoticon.sympathy=%s (っ´ω`)ﾉ(╥ω╥)
+japaneseemojicommands.emoticon.notamused=%s (￣︿￣)
+japaneseemojicommands.emoticon.angry=%s ୧((#Φ益Φ#))୨
+japaneseemojicommands.emoticon.sad=%s ( ; ω ; )
+japaneseemojicommands.emoticon.dead=%s (x_x)
+japaneseemojicommands.emoticon.scared=%s {{ (>_<) }}
+japaneseemojicommands.emoticon.indifferent=%s ╮( ˘ ､ ˘ )╭
+japaneseemojicommands.emoticon.confused=%s (＠_＠)
+japaneseemojicommands.emoticon.doubt=%s (￢_￢)
+japaneseemojicommands.emoticon.surprised=%s (o_O)
+japaneseemojicommands.emoticon.wave=%s (⌒ω⌒)ﾉ
+japaneseemojicommands.emoticon.hug=%s (つ✧ω✧)つ
+japaneseemojicommands.emoticon.wink=%s (^_~)
+japaneseemojicommands.emoticon.sorry=%s (* )人
+japaneseemojicommands.emoticon.nosebleed=%s (*￣ii￣)
+japaneseemojicommands.emoticon.hiding=%s ┬┴┬┴┤(･_├┬┴┬┴
+japaneseemojicommands.emoticon.writing=%s ( ￣ー￣)φ__
+japaneseemojicommands.emoticon.runs=%s ε=ε=┌( >_<)┘
+japaneseemojicommands.emoticon.sleep=%s (＿ ＿*) Z z z
+japaneseemojicommands.emoticon.cat=%s (=^-ω-^=)
+japaneseemojicommands.emoticon.bear=%s (￣(ｴ)￣)
+japaneseemojicommands.emoticon.dog=%s U^ｪ^U
+japaneseemojicommands.emoticon.rabbit=%s ／(^ x ^)＼
+japaneseemojicommands.emoticon.pig=%s ｡ﾟ(ﾟ´(00)`ﾟ)ﾟ｡
+japaneseemojicommands.emoticon.bird=%s (◉Θ◉)
+japaneseemojicommands.emoticon.fish=%s (°)#))<<
+japaneseemojicommands.emoticon.spider=%s /╲/╭[ ᴼᴼ ౪ ᴼᴼ]╮/╱\
+japaneseemojicommands.emoticon.friends=%s ヽ( ⌒ω⌒)人(=^‥^= )ﾉ
+japaneseemojicommands.emoticon.enemies=%s /( .□.)＼ ︵╰(°益°)╯︵ /(.□. /)
+japaneseemojicommands.emoticon.weapons=%s (ಠ o ಠ)¤=[]:::::>
+japaneseemojicommands.emoticon.magic=%s (ﾉ>ω<)ﾉ :｡･::･ﾟ’★,｡･::･ﾟ’☆
+japaneseemojicommands.emoticon.food=%s ( ˘▽˘)っ♨
+japaneseemojicommands.emoticon.music=%s ♪♬((d⌒ω⌒b))♬♪
+japaneseemojicommands.emoticon.unflip=%s ┬─┬ ノ( ゜-゜ノ)
+japaneseemojicommands.emoticon.tableflip=%s (╯°□°）╯︵ ┻━┻
+japaneseemojicommands.emoticon.shrug=%s ¯\_(ツ)_/¯
+
+# Emoticon usage.
+
+japaneseemojicommands.emoticon.usage.happy=/happy
+japaneseemojicommands.emoticon.usage.love=/love
+japaneseemojicommands.emoticon.usage.blush=/blush
+japaneseemojicommands.emoticon.usage.sympathy=/sympathy
+japaneseemojicommands.emoticon.usage.notamused=/notamused
+japaneseemojicommands.emoticon.usage.angry=/angry
+japaneseemojicommands.emoticon.usage.sad=/sad
+japaneseemojicommands.emoticon.usage.dead=/dead
+japaneseemojicommands.emoticon.usage.scared=/scared
+japaneseemojicommands.emoticon.usage.indifferent=/indifferent
+japaneseemojicommands.emoticon.usage.confused=/confused
+japaneseemojicommands.emoticon.usage.doubt=/doubt
+japaneseemojicommands.emoticon.usage.surprised=/surprised
+japaneseemojicommands.emoticon.usage.wave=/wave
+japaneseemojicommands.emoticon.usage.hug=/hug
+japaneseemojicommands.emoticon.usage.wink=/wink
+japaneseemojicommands.emoticon.usage.sorry=/sorry
+japaneseemojicommands.emoticon.usage.nosebleed=/nosebleed
+japaneseemojicommands.emoticon.usage.hiding=/hiding
+japaneseemojicommands.emoticon.usage.writing=/writing
+japaneseemojicommands.emoticon.usage.runs=/runs
+japaneseemojicommands.emoticon.usage.sleep=/sleep
+japaneseemojicommands.emoticon.usage.cat=/cat
+japaneseemojicommands.emoticon.usage.bear=/bear
+japaneseemojicommands.emoticon.usage.dog=/dog
+japaneseemojicommands.emoticon.usage.rabbit=/rabbit
+japaneseemojicommands.emoticon.usage.pig=/pig
+japaneseemojicommands.emoticon.usage.bird=/bird
+japaneseemojicommands.emoticon.usage.fish=/fish
+japaneseemojicommands.emoticon.usage.spider=/spider
+japaneseemojicommands.emoticon.usage.friends=/friends
+japaneseemojicommands.emoticon.usage.enemies=/enemies
+japaneseemojicommands.emoticon.usage.weapons=/weapons
+japaneseemojicommands.emoticon.usage.magic=/magic
+japaneseemojicommands.emoticon.usage.food=/food
+japaneseemojicommands.emoticon.usage.music=/music
+japaneseemojicommands.emoticon.usage.unflip=/unflip
+japaneseemojicommands.emoticon.usage.tableflip=/tableflip
+japaneseemojicommands.emoticon.usage.shrug=/shrug
