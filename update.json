@@ -14,7 +14,10 @@
     "1.10.2-recommended": "1.2.0",
 
     "1.9.4-latest": "1.2.0",
-    "1.9.4-recommended": "1.2.0"
+    "1.9.4-recommended": "1.2.0",
+
+    "1.8.9-latest": "1.2.0",
+    "1.8.9-recommended": "1.2.0"
   },
   "1.12.2": {
     "1.2.0": "https://raw.githubusercontent.com/MinecraftModDevelopmentMods/Japanese-Emoji-Commands/master/CHANGELOG.md",
@@ -32,6 +35,9 @@
     "1.2.0": "https://raw.githubusercontent.com/MinecraftModDevelopmentMods/Japanese-Emoji-Commands/master/CHANGELOG.md"
   },
   "1.9.4": {
+    "1.2.0": "https://raw.githubusercontent.com/MinecraftModDevelopmentMods/Japanese-Emoji-Commands/master/CHANGELOG.md"
+  },
+  "1.8.9": {
     "1.2.0": "https://raw.githubusercontent.com/MinecraftModDevelopmentMods/Japanese-Emoji-Commands/master/CHANGELOG.md"
   }
 }

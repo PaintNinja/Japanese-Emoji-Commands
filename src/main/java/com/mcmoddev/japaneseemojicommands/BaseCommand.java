@@ -4,8 +4,7 @@ import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraft.util.ChatComponentTranslation;
 
 public class BaseCommand extends CommandBase {
 
@@ -35,7 +34,7 @@ public class BaseCommand extends CommandBase {
     }
 
     @Override
-    public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {
-        ((EntityPlayerSP) sender).sendChatMessage(new TextComponentTranslation(type.getEmoticons()).getUnformattedText());
+    public void processCommand(ICommandSender sender, String[] args) throws CommandException {
+        ((EntityPlayerSP) sender).sendChatMessage(new ChatComponentTranslation(type.getEmoticons()).getUnformattedText());
     }
 }
