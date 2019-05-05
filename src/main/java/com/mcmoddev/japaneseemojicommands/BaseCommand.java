@@ -20,12 +20,12 @@ public class BaseCommand extends CommandBase {
     }
 
     @Override
-    public String getName() {
+    public String getCommandName() {
         return type.getName();
     }
 
     @Override
-    public String getUsage(ICommandSender sender) {
+    public String getCommandUsage(ICommandSender sender) {
         return getUsage();
     }
 
