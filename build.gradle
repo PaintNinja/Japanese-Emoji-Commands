@@ -24,8 +24,8 @@ buildscript {
 
 plugins {
     id 'com.github.spotbugs' version '1.6.2'
-    id 'com.matthewprenger.cursegradle' version '1.1.0'
-    id 'org.sonarqube' version '2.6.2'
+    id 'com.matthewprenger.cursegradle' version '1.2.0'
+    id 'org.sonarqube' version '2.7'
     id 'se.bjurr.gitchangelog.git-changelog-gradle-plugin' version '1.55'
     //id 'org.junit.platform.gradle.plugin' version '1.2.0'
     id 'maven-publish'
@@ -664,14 +664,14 @@ curseforge {
             if (getBooleanProperty('create_deobf_jar')) {
                 addArtifact(deobfJar) {
                     if (getBooleanProperty('cf_use_custom_display_name')) {
-                        displayName = "${project.description} ${project.display_version} Development"
+                        displayName = "${project.name} ${project.display_version} Development"
                     }
                 }
             }
             if (getBooleanProperty('create_javadoc_jar')) {
                 addArtifact(javadocJar) {
                     if (getBooleanProperty('cf_use_custom_display_name')) {
-                        displayName = "${project.description} ${project.display_version} Javadoc"
+                        displayName = "${project.name} ${project.display_version} Javadoc"
                     }
                 }
             }
