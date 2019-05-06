@@ -1,4 +1,5 @@
-            **Few missing things and updates.**
-            **Fixed errors with gradle.**
-            **Updated gradle to work with MMD services and automate more of the things**
-            **Fresh source commit and move to MMD.**
+        **Release ready for 1.12.2**
+        **Release ready for 1.11.2**
+        **Release ready for 1.10.2**
+        **Release ready for 1.9.4**
+        **Release ready for 1.8.9**
