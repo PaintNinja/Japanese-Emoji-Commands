@@ -11,7 +11,7 @@
     <img src="http://cf.way2muchnoise.eu/full_japanese-emoji-commands_downloads.svg"/>
 </a>
 <a href="https://github.com/tophatcats-mods/japanese-emoji-commands/commits/dev">
-    <img src="https://img.shields.io/github/last-commit/tophatcats-mods/red-pandas.svg">
+    <img src="https://img.shields.io/github/last-commit/tophatcats-mods/japanese-emoji-commands.svg">
 </a>
 </p>
 
