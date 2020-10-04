@@ -10,7 +10,7 @@
 <a href="https://www.curseforge.com/minecraft/mc-mods/japanese-emoji-commands">
     <img src="http://cf.way2muchnoise.eu/full_japanese-emoji-commands_downloads.svg"/>
 </a>
-<a href="https://github.com/tophatcats-mods/japanese-emoji-commands/commits/development">
+<a href="https://github.com/tophatcats-mods/japanese-emoji-commands/commits/dev">
     <img src="https://img.shields.io/github/last-commit/tophatcats-mods/red-pandas.svg">
 </a>
 </p>
