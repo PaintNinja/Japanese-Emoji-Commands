@@ -1,4 +1,4 @@
-package com.mcmoddev.japaneseemojicommands;
+package cat.tophat.japaneseemojicommands;
 
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.fml.common.Mod;

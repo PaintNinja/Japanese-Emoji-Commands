@@ -1,4 +1,4 @@
-package com.mcmoddev.japaneseemojicommands;
+package cat.tophat.japaneseemojicommands;
 
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.command.CommandBase;

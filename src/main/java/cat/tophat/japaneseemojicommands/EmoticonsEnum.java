@@ -1,4 +1,4 @@
-package com.mcmoddev.japaneseemojicommands;
+package cat.tophat.japaneseemojicommands;
 
 public enum EmoticonsEnum {
 
