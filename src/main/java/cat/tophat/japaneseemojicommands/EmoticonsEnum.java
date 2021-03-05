@@ -2,62 +2,56 @@ package cat.tophat.japaneseemojicommands;
 
 public enum EmoticonsEnum {
 
-    HAPPY("happy", "japaneseemojicommands.emoticon.usage.happy", "japaneseemojicommands.emoticon.happy"),
-    LOVE("love", "japaneseemojicommands.emoticon.usage.love", "japaneseemojicommands.emoticon.love"),
-    BLUSH("blush", "japaneseemojicommands.emoticon.usage.blush", "japaneseemojicommands.emoticon.blush"),
-    SYMPATHY("sympathy", "japaneseemojicommands.emoticon.usage.sympathy", "japaneseemojicommands.emoticon.sympathy"),
-    NOTAMUSED("notamused", "japaneseemojicommands.emoticon.usage.notamused", "japaneseemojicommands.emoticon.notamused"),
-    ANGRY("angry", "japaneseemojicommands.emoticon.usage.angry", "japaneseemojicommands.emoticon.angry"),
-    SAD("sad", "japaneseemojicommands.emoticon.usage.sad", "japaneseemojicommands.emoticon.sad"),
-    DEAD("dead", "japaneseemojicommands.emoticon.usage.dead", "japaneseemojicommands.emoticon.dead"),
-    SCARED("scared", "japaneseemojicommands.emoticon.usage.scared", "japaneseemojicommands.emoticon.scared"),
-    INDIFFERENT("indifferent", "japaneseemojicommands.emoticon.usage.indifferent", "japaneseemojicommands.emoticon.indifferent"),
-    CONFUSED("confused", "japaneseemojicommands.emoticon.usage.confused", "japaneseemojicommands.emoticon.confused"),
-    DOUBT("doubt", "japaneseemojicommands.emoticon.usage.doubt", "japaneseemojicommands.emoticon.doubt"),
-    SURPRISED("surprised", "japaneseemojicommands.emoticon.usage.surprised", "japaneseemojicommands.emoticon.surprised"),
-    WAVE("wave", "japaneseemojicommands.emoticon.usage.wave", "japaneseemojicommands.emoticon.wave"),
-    HUG("hug", "japaneseemojicommands.emoticon.usage.hug", "japaneseemojicommands.emoticon.hug"),
-    WINK("wink", "japaneseemojicommands.emoticon.usage.wink", "japaneseemojicommands.emoticon.wink"),
-    SORRY("sorry", "japaneseemojicommands.emoticon.usage.sorry", "japaneseemojicommands.emoticon.sorry"),
-    NOSEBLEED("nosebleed", "japaneseemojicommands.emoticon.usage.nosebleed", "japaneseemojicommands.emoticon.nosebleed"),
-    HIDING("hiding", "japaneseemojicommands.emoticon.usage.hiding", "japaneseemojicommands.emoticon.hiding"),
-    WRITING("writing", "japaneseemojicommands.emoticon.usage.writing", "japaneseemojicommands.emoticon.writing"),
-    RUNS("runs", "japaneseemojicommands.emoticon.usage.runs", "japaneseemojicommands.emoticon.runs"),
-    SLEEP("sleep", "japaneseemojicommands.emoticon.usage.sleep", "japaneseemojicommands.emoticon.sleep"),
-    CAT("cat", "japaneseemojicommands.emoticon.usage.cat", "japaneseemojicommands.emoticon.cat"),
-    BEAR("bear", "japaneseemojicommands.emoticon.usage.bear", "japaneseemojicommands.emoticon.bear"),
-    DOG("dog", "japaneseemojicommands.emoticon.usage.dog", "japaneseemojicommands.emoticon.dog"),
-    RABBIT("rabbit", "japaneseemojicommands.emoticon.usage.rabbit", "japaneseemojicommands.emoticon.rabbit"),
-    PIG("pig", "japaneseemojicommands.emoticon.usage.pig", "japaneseemojicommands.emoticon.pig"),
-    BIRD("bird", "japaneseemojicommands.emoticon.usage.bird", "japaneseemojicommands.emoticon.bird"),
-    FISH("fish", "japaneseemojicommands.emoticon.usage.fish", "japaneseemojicommands.emoticon.fish"),
-    SPIDER("spider", "japaneseemojicommands.emoticon.usage.spider", "japaneseemojicommands.emoticon.spider"),
-    FRIENDS("friends", "japaneseemojicommands.emoticon.usage.friends", "japaneseemojicommands.emoticon.friends"),
-    ENEMIES("enemies", "japaneseemojicommands.emoticon.usage.enemies", "japaneseemojicommands.emoticon.enemies"),
-    WEAPONS("weapons", "japaneseemojicommands.emoticon.usage.weapons", "japaneseemojicommands.emoticon.weapons"),
-    MAGIC("magic", "japaneseemojicommands.emoticon.usage.magic", "japaneseemojicommands.emoticon.magic"),
-    FOOD("food", "japaneseemojicommands.emoticon.usage.food", "japaneseemojicommands.emoticon.food"),
-    MUSIC("music", "japaneseemojicommands.emoticon.usage.music", "japaneseemojicommands.emoticon.music"),
-    UNFLIP("unflip", "japaneseemojicommands.emoticon.usage.unflip", "japaneseemojicommands.emoticon.unflip"),
-    TABLEFLIP("tableflip", "japaneseemojicommands.emoticon.usage.tableflip", "japaneseemojicommands.emoticon.tableflip"),
-    SHRUG("shrug", "japaneseemojicommands.emoticon.usage.shrug", "japaneseemojicommands.emoticon.shrug");
+    HAPPY("happy", "japanese-emoji-commands.emoticon.happy"),
+    LOVE("love", "japanese-emoji-commands.emoticon.love"),
+    BLUSH("blush", "japanese-emoji-commands.emoticon.blush"),
+    SYMPATHY("sympathy", "japanese-emoji-commands.emoticon.sympathy"),
+    NOTAMUSED("notamused", "japanese-emoji-commands.emoticon.notamused"),
+    ANGRY("angry", "japanese-emoji-commands.emoticon.angry"),
+    SAD("sad", "japanese-emoji-commands.emoticon.sad"),
+    DEAD("dead", "japanese-emoji-commands.emoticon.dead"),
+    SCARED("scared", "japanese-emoji-commands.emoticon.scared"),
+    INDIFFERENT("indifferent", "japanese-emoji-commands.emoticon.indifferent"),
+    CONFUSED("confused", "japanese-emoji-commands.emoticon.confused"),
+    DOUBT("doubt", "japanese-emoji-commands.emoticon.doubt"),
+    SURPRISED("surprised", "japanese-emoji-commands.emoticon.surprised"),
+    WAVE("wave", "japanese-emoji-commands.emoticon.wave"),
+    HUG("hug", "japanese-emoji-commands.emoticon.hug"),
+    WINK("wink", "japanese-emoji-commands.emoticon.wink"),
+    SORRY("sorry", "japanese-emoji-commands.emoticon.sorry"),
+    NOSEBLEED("nosebleed", "japanese-emoji-commands.emoticon.nosebleed"),
+    HIDING("hiding", "japanese-emoji-commands.emoticon.hiding"),
+    WRITING("writing", "japanese-emoji-commands.emoticon.writing"),
+    RUNS("runs", "japanese-emoji-commands.emoticon.runs"),
+    SLEEP("sleep", "japanese-emoji-commands.emoticon.sleep"),
+    CAT("cat", "japanese-emoji-commands.emoticon.cat"),
+    BEAR("bear", "japanese-emoji-commands.emoticon.bear"),
+    DOG("dog", "japanese-emoji-commands.emoticon.dog"),
+    RABBIT("rabbit", "japanese-emoji-commands.emoticon.rabbit"),
+    PIG("pig", "japanese-emoji-commands.emoticon.pig"),
+    BIRD("bird", "japanese-emoji-commands.emoticon.bird"),
+    FISH("fish", "japanese-emoji-commands.emoticon.fish"),
+    SPIDER("spider", "japanese-emoji-commands.emoticon.spider"),
+    FRIENDS("friends", "japanese-emoji-commands.emoticon.friends"),
+    ENEMIES("enemies", "japanese-emoji-commands.emoticon.enemies"),
+    WEAPONS("weapons", "japanese-emoji-commands.emoticon.weapons"),
+    MAGIC("magic", "japanese-emoji-commands.emoticon.magic"),
+    FOOD("food", "japanese-emoji-commands.emoticon.food"),
+    MUSIC("music", "japanese-emoji-commands.emoticon.music"),
+    UNFLIP("unflip", "japanese-emoji-commands.emoticon.unflip"),
+    TABLEFLIP("tableflip", "japanese-emoji-commands.emoticon.tableflip"),
+    SHRUG("shrug", "japanese-emoji-commands.emoticon.shrug");
 
     private final String name;
-    private final String usage;
     private final String emoticons;
 
-    EmoticonsEnum(String name, String usage, String emoticons) {
+    EmoticonsEnum(String name, String emoticons) {
         this.name = name;
-        this.usage = usage;
         this.emoticons = emoticons;
     }
 
     public final String getName() {
         return name;
-    }
-
-    public final String getUsage() {
-        return usage;
     }
 
     public final String getEmoticons() {
