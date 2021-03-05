@@ -1,21 +1,20 @@
 repositories {
-    jcenter()
     mavenLocal()
     mavenCentral()
 
     maven {
         name = 'Forge Maven'
-        url = 'https://files.minecraftforge.net/maven'
+        url = 'https://files.minecraftforge.net/maven/'
     }
 
     maven {
         name = 'Minecraft Mod Development Maven'
-        url = 'https://maven.mcmoddev.com'
+        url = 'https://maven.mcmoddev.com/'
     }
 
     maven {
-        name = 'TehNuts Maven'
-        url = 'https://maven.tehnut.info'
+        name = 'Jared and Darkhaxs Maven'
+        url = 'https://maven.blamejared.com/'
     }
 
     maven {

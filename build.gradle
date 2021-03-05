@@ -8,13 +8,18 @@ buildscript {
             name = 'Gradle Maven'
             url = 'https://plugins.gradle.org/m2/'
         }
+        maven {
+            name = 'Sponge Maven'
+            url = 'https://dist.creeper.host/Sponge/maven'
+        }
         jcenter()
         mavenCentral()
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
-        classpath 'gradle.plugin.com.matthewprenger:CurseGradle:1.4.0'
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: "${project.forgegradle_version}", changing: true
         classpath group: 'com.diluv.schoomp', name: 'Schoomp', version: "${project.schoomp_version}"
+        classpath "gradle.plugin.com.matthewprenger:CurseGradle:${project.cursegradle_version}"
+        classpath "org.spongepowered:mixingradle:${project.mixingradle_version}"
     }
 }
 
@@ -23,6 +28,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'com.matthewprenger.cursegradle'
+apply plugin: 'org.spongepowered.mixin'
 
 import com.diluv.schoomp.Webhook
 import com.diluv.schoomp.message.Message
@@ -42,8 +48,10 @@ sourceSets {
     api
     main
     test
+    main.resources.srcDirs += 'src/generated/resources'
 }
 
+println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
     mappings channel: project.mappings_channel, version: "${project.mappings_version}-${project.mappings_mc_version}"
     if (project.hasProperty('at_file')) {
@@ -55,6 +63,9 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', "info"
+            if (getBooleanProperty(project.mixins_enabled)) {
+                arg '-mixin.config=' + project.mod_id + '.mixins.json'
+            }
             mods.create("${project.mod_id}").source(sourceSets.main)
         }
 
@@ -62,6 +73,9 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', "info"
+            if (getBooleanProperty(project.mixins_enabled)) {
+                arg '-mixin.config=' + project.mod_id + '.mixins.json'
+            }
             mods.create("${project.mod_id}").source(sourceSets.main)
         }
 
@@ -70,7 +84,7 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'info'
-            args '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/')
+            args '--mod', project.mod_id, '--all', '--output', file("src/cat/tophat/${project.mod_id}/generated/resources/")
             mods.create("${project.mod_id}").source(sourceSets.main)
         }
     }
@@ -94,6 +108,11 @@ jar {
                 "Built-On-Java": "${System.getProperty('java.vm.version')} (${System.getProperty('java.vm.vendor')})",
                 "Built-On": "${project.mc_version}-${project.forge_version}"
         )
+        if (getBooleanProperty(project.mixins_enabled)) {
+            mainAttributes(
+                    "MixinConfigs": "${project.mod_id}.mixins.json"
+            )
+        }
 
         if (project.hasProperty('core_plugin')) {
             attributes 'FMLCorePluginContainsFMLMod': 'true'
@@ -107,6 +126,12 @@ jar {
         if (project.hasProperty('mod_contained_deps')) {
             attributes 'ContainedDeps': project.mod_contained_deps
         }
+    }
+}
+
+if (getBooleanProperty(project.mixins_enabled)) {
+    mixin {
+        add sourceSets.main, '${project.mod_id}.refmap.json'
     }
 }
 

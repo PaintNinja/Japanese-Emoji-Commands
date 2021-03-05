@@ -1,7 +1,8 @@
 ---
 name: Issue report
 title: ''
-lables: 
+about: Report crashes, and/or bugs using this template.
+lables:
 assignees: 'ProxyNeko'
 
 ---
@@ -17,12 +18,12 @@ assignees: 'ProxyNeko'
 
 **Mod Version:** {Mods version number, (DON'T PUT LATEST)}
 
-**Crash Logs:** {Link(s) to GitHub Gist with full latest.log and/or crash report}
+**Crash Logs:** {Link(s) to a GitHub [Gist](https://gist.github.com) with full latest.log and/or crash report}
 
 **Steps to Reproduce:**
- 1. Start the game.
- 2. Do this in game.
- 3. Do thing with this.
- 3. Crash...
+1. Start the game.
+2. Do this in game.
+3. Do thing with this.
+3. Crash...
 
 **Description of issue:**

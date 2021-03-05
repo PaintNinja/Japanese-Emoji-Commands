@@ -2,11 +2,11 @@
 name: Feature request
 about: Want to request a feature?
 title: ''
-labels: Feature
+labels: feature
 assignees: 'ProxyNeko'
-
 ---
 
-<!-- If you'd like to see something added as a feature, I'd be greatful if you can code of a PR. -->
-<!-- Before hand though I recommend talking to me on Discord first to better get an idea of the request. -->
+<!-- Feature requests that are submitted via GitHub are rarely implemented. -->
+<!-- If you would like to suggest something for the mod, please bring it up with ProxyNeko on Discord first. -->
+<!-- Should it be beyond our skill level you should be ready to submit it as a PR. -->
 <!-- Discord: https://discord.tophat.cat -->
