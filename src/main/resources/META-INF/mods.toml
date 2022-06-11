@@ -9,21 +9,21 @@ credits="ProxyNeko"
 authors="ProxyNeko"
 
 [[mods]]
-modId="japanese-emoji-commands"
+modId="japaneseemojicommands"
 version="${file.jarVersion}"
 displayName="Japanese Emoji Commands"
 description='''
 A simple mod that let's you use Kaomoji (Japanese emoji) in Minecraft.
 '''
 
-[[dependencies.japanese-emoji-commands]]
+[[dependencies.japaneseemojicommands]]
 modId="forge"
 mandatory=true
-versionRange="[36,)"
+versionRange="[36.2.34,)"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.japanese-emoji-commands]]
+[[dependencies.japaneseemojicommands]]
 modId="minecraft"
 mandatory=true
 versionRange="[1.16.5]"

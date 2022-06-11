@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 @Mod(JapaneseEmojiCommands.MOD_ID)
 public class JapaneseEmojiCommands {
 
-    public static final String MOD_ID = "japanese-emoji-commands";
+    public static final String MOD_ID = "japaneseemojicommands";
 
     public JapaneseEmojiCommands() {
         DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> JapaneseEmojiCommandsClient::clientOnlyModInit);

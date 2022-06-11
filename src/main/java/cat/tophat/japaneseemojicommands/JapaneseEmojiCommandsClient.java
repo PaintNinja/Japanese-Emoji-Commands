@@ -34,7 +34,7 @@ public class JapaneseEmojiCommandsClient {
         if (ModList.get().isLoaded("clientcommands")) {
             FMLJavaModLoadingContext.get().getModEventBus().addListener(JapaneseEmojiCommandsClient::enqueueIMC);
         } else {
-            COMMANDS_DISPATCHER.register(EMOJI_COMMAND);
+            getCommandsDispatcher().register(EMOJI_COMMAND);
             Mod.EventBusSubscriber.Bus.FORGE.bus().get().addListener(ClientCommandsListener::playerChat);
         }
     }
