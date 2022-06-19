@@ -1,31 +1,28 @@
 modLoader="javafml"
-loaderVersion="[36,)"
+loaderVersion="[41,)"
 license="LGPL-v2.1"
 updateJSONURL="https://tophat.cat/japanese-emoji-commands/update.json"
 issueTrackerURL="https://github.com/tophatcats-mods/japanese-emoji-commands/issues"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/japanese-emoji-commands"
 #logoFile=""
-credits="ProxyNeko"
-authors="ProxyNeko"
+authors="Paint_Ninja, ProxyNeko"
 
 [[mods]]
-modId="japanese-emoji-commands"
+modId="japaneseemojicommands"
 version="${file.jarVersion}"
 displayName="Japanese Emoji Commands"
-description='''
-A simple mod that let's you use Kaomoji (Japanese emoji) in Minecraft.
-'''
+description="A simple mod that let's you use Kaomoji (Japanese emoji) in Minecraft."
 
-[[dependencies.japanese-emoji-commands]]
+[[dependencies.japaneseemojicommands]]
 modId="forge"
 mandatory=true
-versionRange="[36,)"
+versionRange="[41.0.35,)"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.japanese-emoji-commands]]
+[[dependencies.japaneseemojicommands]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.16.5]"
+versionRange="[1.19,1.20)"
 ordering="NONE"
 side="BOTH"
