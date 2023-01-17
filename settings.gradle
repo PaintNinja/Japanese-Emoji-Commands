@@ -1,12 +1,14 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
+        mavenCentral()
         maven {
-            name = 'Minecraft Forge Maven'
+            name = 'MinecraftForge'
             url = 'https://maven.minecraftforge.net/'
         }
-
-        mavenCentral()
-        gradlePluginPortal()
+        maven {
+            name = 'The Modding Inquisition'
+            url = 'https://maven.moddinginquisition.org/releases'
+        }
     }
 }
