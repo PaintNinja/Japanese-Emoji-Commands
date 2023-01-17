@@ -20,38 +20,35 @@
  */
 package dev.tophatcat.japaneseemojicommands;
 
+import com.mojang.brigadier.ParseResults;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screens.ChatScreen;
-import net.minecraft.commands.Commands;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.commands.CommandSourceStack;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.RegisterClientCommandsEvent;
+import net.minecraftforge.client.event.ClientChatEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-import java.util.Locale;
+import static dev.tophatcat.japaneseemojicommands.ClientModLifecycleEvents.COMMANDS_DISPATCHER;
 
 @Mod.EventBusSubscriber(modid = JapaneseEmojiCommands.MOD_ID,
     bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
 public class ClientForgeEvents {
-
     @SubscribeEvent
-    public static void onRegisterClientCommands(final RegisterClientCommandsEvent event) {
-        final var emojiCommand = Commands.literal("emoji");
-        for (final EmoticonsEnum emoticon : EmoticonsEnum.values()) {
-            emojiCommand.then(Commands.literal(emoticon.name().toLowerCase(Locale.ROOT))
-                .executes(ctx -> {
-                        final String emote = new TranslatableComponent(emoticon.getTranslationKey()).getString();
-                        final var chatScreen = new ChatScreen("");
-                        Minecraft.getInstance().pushGuiLayer(chatScreen);
-                        chatScreen.sendMessage(emote, false);
-                        Minecraft.getInstance().popGuiLayer();
-
-                        return 1;
-                    }
-                ));
+    public static void onPlayerChat(final ClientChatEvent event) {
+        final String message = event.getMessage();
+        final var player = Minecraft.getInstance().player;
+        if (player != null && message.startsWith("!")) {
+            try {
+                final ParseResults<CommandSourceStack> parse = COMMANDS_DISPATCHER.parse(
+                    event.getMessage().substring(1),
+                    Minecraft.getInstance().player.createCommandSourceStack()
+                );
+                if (parse.getContext().getNodes().size() > 0) {
+                    event.setCanceled(true);
+                    COMMANDS_DISPATCHER.execute(parse);
+                }
+            } catch (final CommandSyntaxException ignored) {}
         }
-        event.getDispatcher().register(emojiCommand);
     }
 }
