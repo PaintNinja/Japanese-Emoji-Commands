@@ -24,6 +24,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.ChatScreen;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterClientCommandsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -41,10 +42,10 @@ public class ClientForgeEvents {
         for (final EmoticonsEnum emoticon : EmoticonsEnum.values()) {
             emojiCommand.then(Commands.literal(emoticon.name().toLowerCase(Locale.ROOT))
                 .executes(ctx -> {
-                        final String emote = Component.translatable(emoticon.getTranslationKey()).getString();
+                        final String emote = new TranslatableComponent(emoticon.getTranslationKey()).getString();
                         final var chatScreen = new ChatScreen("");
                         Minecraft.getInstance().pushGuiLayer(chatScreen);
-                        chatScreen.handleChatInput(emote, false);
+                        chatScreen.sendMessage(emote, false);
                         Minecraft.getInstance().popGuiLayer();
 
                         return 1;
