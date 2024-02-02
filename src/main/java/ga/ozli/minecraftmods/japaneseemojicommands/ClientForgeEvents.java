@@ -21,10 +21,9 @@ public class ClientForgeEvents {
             emojiCommand.then(Commands.literal(emoticon.name().toLowerCase(Locale.ROOT))
                 .executes(ctx -> {
                         final String emote = Component.translatable(emoticon.getTranslationKey()).getString();
-                        final var chatScreen = new ChatScreen("");
-                        Minecraft.getInstance().pushGuiLayer(chatScreen);
-                        chatScreen.handleChatInput(emote, false);
-                        Minecraft.getInstance().popGuiLayer();
+
+                        if (Minecraft.getInstance().player != null)
+                            Minecraft.getInstance().player.connection.sendChat(emote);
 
                         return 1;
                     }

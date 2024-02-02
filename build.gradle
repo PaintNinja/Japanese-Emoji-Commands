@@ -1,12 +1,12 @@
 plugins {
     id 'eclipse'
-    id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'io.github.groovymc.modsdotgroovy' version '1.1.2'
 }
 
 version = "$mod_version"
 group = 'ga.ozli.minecraftmods.japaneseemojicommands'
-archivesBaseName = 'japaneseemojicommands'
+archivesBaseName = 'Japanese-Emoji-Commands-Forge-1.20.X'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -77,4 +77,10 @@ tasks.withType(JavaCompile).configureEach {
 modsDotGroovy {
     dslVersion = '1.2.1'
     platform 'forge'
+}
+
+sourceSets.each {
+    def dir = layout.buildDirectory.dir("sourcesSets/$it.name")
+    it.output.resourcesDir = dir
+    it.java.destinationDirectory = dir
 }

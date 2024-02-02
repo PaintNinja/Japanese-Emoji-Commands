@@ -1,6 +1,6 @@
 ModsDotGroovy.make {
     modLoader = 'javafml'
-    loaderVersion = "[${this.buildProperties.forge_version.take(2)},)"
+    loaderVersion = "[46,)"
 
     license = 'MIT'
     issueTrackerUrl = 'https://github.com/PaintNinja/japanese-emoji-commands/issues'
@@ -19,11 +19,11 @@ ModsDotGroovy.make {
 
         dependencies {
             forge {
-                versionRange = ">=${this.buildProperties.forge_version}"
+                versionRange = ">=46"
                 side = DependencySide.CLIENT
             }
             minecraft {
-                versionRange = "[${this.buildProperties.minecraft_version}]"
+                versionRange = "[1.20,)"
                 side = DependencySide.CLIENT
             }
         }
