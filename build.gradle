@@ -6,7 +6,7 @@ plugins {
 
 version = "$mod_version"
 group = 'ga.ozli.minecraftmods.japaneseemojicommands'
-archivesBaseName = 'japaneseemojicommands'
+archivesBaseName = 'Japanese-Emoji-Commands-Forge-1.20.X'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
